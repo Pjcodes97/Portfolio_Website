@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #201E1D;
+    color: white;
+    max-height: 100%;
+}
+
+/* Header Section */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    position: sticky;
+    z-index: 1;
+}
+
+#pages ul {
+    list-style-type: none;
+}
+
+.logo {
+    margin: 1rem;
+}
+
+.navbutton {
+    display: inline-block;
+    margin: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+/* Media Links Section*/
+
+.sidebar {
+    display: flex;
+    flex-direction: column-reverse;
+    position: fixed;
+    height: 100vh;
+    width: 6.25rem;
+    z-index: 1;
+}
+
+#ext-links {
+    margin-bottom: 7rem;
+}
+
+.ext-button {
+    margin-bottom: 2rem;
+}
+
+
+
+
+/* MAIN CONTENT */
+
+main {
+    position: relative;
+    left: 6.25rem;
+    margin: 0.5rem;
+}
+
+/* Landing Section */
+
+#landing {
+    height: 100vh;
+    display:flex;
+    justify-content: flex-start;
+}
+
+.text-container {
+    position: relative;
+    left: 5%;
+    top: 10%;
+}
+
+.text-container h1 {
+    font-size: 5rem;
+    font-weight:900;
+}
+
+.text-container h1 span {
+    color:#E37028;
+}
+
+.text-container p {
+    color: #B1ACA8;
+}
+
+

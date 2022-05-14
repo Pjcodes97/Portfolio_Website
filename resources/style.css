@@ -69,12 +69,18 @@ header {
 
 #ext-links {
     margin-bottom: 7rem;
+    padding-left: 1.25rem;
+    list-style-type: none;
 }
 
 .ext-button {
     margin-bottom: 2rem;
 }
 
+i {
+    font-size:2rem;
+    color:white;
+}
 
 
 

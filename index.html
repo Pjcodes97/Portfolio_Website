@@ -27,7 +27,6 @@
         <ul id="ext-links">
             <li class="ext-button"><a>GitHub</a></li>
             <li class="ext-button"><a>LinkedIn</a></li>
-            <li class="ext-button"><a>Facebook</a></li>
         </ul>
     </div>
     <main>
@@ -40,34 +39,40 @@
                 <button type="button">Let's Connect!</button>
             </div>            
         </section>
-        <section id="About">
+        <section id="about">
             <h2>Who Am I?</h2>
-            <div class="text-container">
-                <p>Hello! My name is Caleb Knepley and I am a Front-End developer located in Northern Virginia. I am very passionate about challenging myself with 
-                    new, exciting projects that will push my knowledge and force me to grow as a developer.
-                </p>
-                <p>I am a highly self-motivated person, a diligent worker, and very detail oriented. Along with web development, I also enjoy gaming, 
-                    martial arts, fitness, and learning new skills. My personal goal is to always be learning something new!
-                </p>
-                <p>I am looking to enter the field of professional web development with a focus on Front-End development. I'm interested in both
-                    working with and learning from positive people who want to create something new!
-                </p>
-                <h3>Coding Skills:</h3>
-                <ul>
-                <li>JavaScript</li>
-                <li>HTML/CSS</li>
-                <li>Python</li>
-                <li>Flask</li>
-                <li>Responsive Web Design</li>
-                </ul>
+            <div id="about-grid">
+                <div class="text-container">
+                    <p>Hello! My name is Caleb Knepley and I am a Front-End developer located in Northern Virginia. I am very passionate about challenging myself with 
+                        new, exciting projects that will push my knowledge and force me to grow as a developer.
+                    </p>
+                    <p>I am a highly self-motivated person, a diligent worker, and very detail oriented. Along with web development, I also enjoy gaming, 
+                        martial arts, fitness, and learning new skills. My personal goal is to always be learning something new!
+                    </p>
+                    <p>I am looking to enter the field of professional web development with a focus on Front-End development. I'm interested in both
+                        working with and learning from positive people who want to create something new!
+                    </p>
+                    <h3>Development Skills:</h3>
+                    <ul id="skill-list">
+                    <li class="skill">JavaScript</li>
+                    <li class="skill">HTML/CSS</li>
+                    <li class="skill">Python</li>
+                    <li class="skill">Flask</li>
+                    <li class="skill">Responsive Web Design</li>
+                    </ul>
+                </div>
+                <div class="img-container">
+                    <img src="resources/images/IMG-1222.jpg" alt="A dashingly handsome gentleman.">
+                </div>
             </div>
-            <div class="img-container"><p>Image Here</p></div>
         </section>
         <section id="portfolio">
             <h2>Things I've Created</h2>
             <div class="projects">
-                <div class="project-container"></div>
-                <div class="project-container"></div>
+                <div class="project-container one">
+                </div>
+                <div class="project-container two">
+                </div>
             </div>
         </section>
         <section id="contact">
@@ -77,8 +82,8 @@
             </p>
             <button type="button">Connect With Me</button>
             <form action="mailto:c66kneps@gmail.com" method="post" enctype="multipart/form-data">
-                <textarea id="message" name="message" rows="5" cols="40" required>Message</textarea>
-                <input type="submit" value="Message Me!">   
+                <textarea id="message" name="message" rows="10" cols="70" required>Message</textarea>
+                <input id="formbutton" type="submit" value="Message Me!">   
             </form>
         </section>
         <footer>

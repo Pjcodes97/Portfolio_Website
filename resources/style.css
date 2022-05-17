@@ -57,6 +57,11 @@ h2 {
     position:relative;
 }
 
+h3 {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color:#E37028;
+}
 /* Header Section */
 
 header {
@@ -76,6 +81,10 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     height: 100%;
+}
+
+#pages {
+    margin-top: 0.5rem;
 }
 
 .logo {

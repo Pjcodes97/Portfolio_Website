@@ -32,9 +32,15 @@ colorButton.onclick = colorChange;
 let dropMenu = document.getElementById('dropdown');
 let dropButton = document.getElementById('dropbutton');
 
-
+let screenCount = 0
 function dropDown() {
-    dropMenu.style.display = 'block';
+    if (screenCount === 0) {
+        dropMenu.style.display = 'block';
+        screenCount += 1;
+    } else if (screenCount === 1) {
+        dropMenu.style.display = 'none';
+        screenCount -= 1;
+    }
 }
 
 dropButton.onclick = dropDown;

@@ -10,10 +10,10 @@ html, body {
     background-color: #201E1D;
     color: white;
     max-height: 100%;
+    overflow-x: hidden;
 }
 
 section {
-    height: 100vh;
     max-width: 100%;
     padding-top: 6rem;
 }
@@ -62,7 +62,8 @@ h2 {
 header {
     display: flex;
     justify-content: space-between;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     z-index: 1;
     box-shadow: 2px 2px 10px #E37028;
@@ -99,9 +100,10 @@ header {
     display: flex;
     flex-direction: column-reverse;
     position: fixed;
-    height: 100vh;
+    height: 100%;
     width: 6.25rem;
     z-index: 1;
+    top: 10%;
 }
 
 #ext-links {
@@ -137,12 +139,10 @@ main {
 /* Landing Section */
 
 #landing {
-    height: 100vh;
     display:grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 2fr 1fr;
     justify-items: center;
-    padding-top: 0;
 }
 
 #landing .text-container {
@@ -333,4 +333,148 @@ footer {
     color:#B1ACA8;
     padding: 1.5rem;
     font-style: italic;
+}
+
+
+/* Media Queries and Dropdown Menu Creation */
+@media only screen and (max-width: 1180px) {
+    .text-container h1 {
+        font-size: 4.5rem;
+    }
+
+    #about h2 {
+        font-size: 4.5rem;
+    }
+
+    #portfolio h2 {
+        font-size: 4.5rem;
+    }
+
+    #contact h2 {
+        font-size: 4.5rem;
+    }
+
+    #landing .button {
+        padding-top: 5rem;
+    }
+}
+
+@media only screen and (max-width: 984px) {
+    html, body {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .text-container h1 {
+        font-size: 4rem;
+    }
+
+    #about h2 {
+        font-size: 4rem;
+    }
+
+    #portfolio h2 {
+        font-size: 4rem;
+    }
+
+    #contact h2 {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 715px) {
+    .img-container {
+        display: none;
+    }
+
+    #landing {
+        align-items: center;
+    }
+
+    #about-grid {
+        grid-template-columns: none;
+    }
+    
+    .projects {
+        grid-template-columns: none;
+        grid-template-rows: 15rem 15rem;
+    }
+}
+
+@media only screen and (max-width: 595px) {
+    .sidebar {
+        display: none;
+    }
+
+    main {
+        max-width: 100%;
+        left: 0;
+    }
+
+    #about-grid {
+        margin-left: 1rem;
+    }
+
+    #portfolio {
+        margin-left: 0;
+    }
+
+    .projects {
+        margin-left: 0;
+    }
+
+}
+
+#phonepages {
+    display: none;
+}
+
+@media only screen and (max-width: 525px) {
+    #pages {
+        display: none;
+    }
+
+    #phonepages {
+        display: block;
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+
+    #dropdown {
+        display: none;
+        position: absolute;
+        z-index: 2;
+        background-color:#201E1D;
+    }
+
+    header {
+        justify-content: flex-start;
+    }
+
+    .topbutton {
+        display: block;
+        padding: 1.15rem;
+        border: 1px solid #E37028;
+    }
+
+    a {
+        display: block;
+        padding: 1.15rem;
+        border: 1px solid #E37028;
+    }
+
+    #landing {
+        grid-template-columns: none;
+    }
+}
+
+@media only screen and (max-width: 325px) {
+    html, body {
+        font-size: 12px;
+    }
+
+    #contact h2 {
+        text-align: center;
+    }
 }

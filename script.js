@@ -15,7 +15,7 @@ contactButton.onclick = visibleForm;
 
 let color = 0;
 
-
+/* Changes CSS to the light color theme style sheet */
 function colorChange() {
     if (color === 0) {
         theme.setAttribute('href', 'resources/altcolor.css');
@@ -28,5 +28,14 @@ function colorChange() {
 
 colorButton.onclick = colorChange;
 
+/*Creating Drop down menu */
+let dropMenu = document.getElementById('dropdown');
+let dropButton = document.getElementById('dropbutton');
 
+
+function dropDown() {
+    dropMenu.style.display = 'block';
+}
+
+dropButton.onclick = dropDown;
 

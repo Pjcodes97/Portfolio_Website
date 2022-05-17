@@ -138,8 +138,10 @@ main {
 
 #landing {
     height: 100vh;
-    display:flex;
-    justify-content: flex-start;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    justify-items: center;
     padding-top: 0;
 }
 
@@ -168,15 +170,11 @@ main {
 
 #landing .button {
     position: relative;
-    top: 55%;
-    right: 30%;
 }
-
 
 .landimg {
     position: relative;
     top: 10%;
-    left: 5%;
 }
 
 /* About Page */
@@ -204,7 +202,6 @@ main {
 .img-container {
     position: relative;
     bottom: 5%;
-    height: 70%;
     margin-left: 2rem;
 }
 

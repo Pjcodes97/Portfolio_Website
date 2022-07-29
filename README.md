@@ -1,8 +1,8 @@
 # Portfolio Website!
-Personal portfolio websites using css and vanilla JavaScript. Contains links to all created projects and a self-description ('About Me') section.
+Mock-Up of a Personal portfolio website using css and vanilla JavaScript. Contains links to created projects and a self-description ('About Me') section.
 
 ## Description
-As stated above this website was made using only **CSS** and **vanilla JavaScript** (with the additional use of Font Awesome fonts). The goal was to design a basic website that contains different sections describing the owner (your's truly) and listing projects and programs that have been created by said owner. Most of the functionality comes from the CSS files in the project. However, JavaScript is used to add a *color theme changer*, a *drop down menu*, and a *hidden form button*. The design of the page mainly uses **CSS Grid** with some use of **Flexbox** for certain elements such as the navbar and the side-bar.
+As stated above this website was made using only **CSS** and **vanilla JavaScript** (with the additional use of Font Awesome fonts). The goal was to design a basic website that contains different sections describing the owner and listing projects and programs that have been created by said owner. Most of the functionality comes from the CSS files in the project. However, JavaScript is used to add a *color theme changer*, a *drop down menu*, and a *hidden form button*. The design of the page mainly uses **CSS Grid** with some use of **Flexbox** for certain elements such as the navbar and the side-bar.
 
 ## Skills/Technologies Used:
 1. HTML

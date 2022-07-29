@@ -44,4 +44,3 @@ function dropDown() {
 }
 
 dropButton.onclick = dropDown;
-
